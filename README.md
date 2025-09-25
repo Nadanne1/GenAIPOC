@@ -1,277 +1,142 @@
-# AWS Blog Writing AI Agent
+# MCP Server Integration Toolkit
 
-An intelligent content generation system that analyzes existing AWS blogs, learns from their patterns and styles, and generates high-quality technical blog content using AWS Bedrock and Claude Sonnet 4.
+A comprehensive toolkit for integrating Model Context Protocol (MCP) servers with Amazon Bedrock AgentCore. This repository provides step-by-step guides, working examples, and automation scripts to help developers quickly deploy and connect MCP servers.
 
-## Features
+## What's Included
 
-- **GitHub Repository Analysis**: Automatically analyzes GitHub repositories to understand solutions and generate relevant blog content
-- **AWS Bedrock Integration**: Leverages Claude Sonnet 4 for intelligent content generation and analysis
-- **MCP Integration**: Connects with AWS MCP server for accurate technical information and architecture diagrams
-- **Quality Control**: Comprehensive validation for technical accuracy, style compliance, and content quality
-- **Multi-stage Review System**: Structured review workflow with feedback incorporation
-- **Microservices Architecture**: Scalable, containerized services with Docker and Kubernetes support
+### 📚 Complete Integration Guide
+- **CLI-based Deployment**: Quick setup using the AgentCore CLI
+- **SDK-based Integration**: Advanced programmatic integration using Python SDKs
+- **Authentication Methods**: Cognito OAuth2 and API key authentication
+- **Best Practices**: Security, monitoring, and production deployment guidelines
 
-## Architecture
+### 🛠️ Working Examples
+- **Simple MCP Server**: Example server with echo, timestamp, and calculator tools
+- **Client Implementation**: Complete client with error handling and authentication
+- **Resource Management**: Examples of MCP resource handling
 
-The system follows a microservices architecture with the following components:
-
-- **API Gateway**: Central entry point with authentication, rate limiting, and request routing
-- **Blog Analyzer Service**: Analyzes existing AWS blogs to extract patterns and styles
-- **Content Generator Service**: Generates blog content using Claude Sonnet 4 and learned patterns
-- **MCP Connector Service**: Integrates with AWS MCP server for technical validation
-- **Quality Control Service**: Validates content quality and technical accuracy
-- **Review System Service**: Manages multi-stage review workflows
-- **Bedrock Service**: Handles all AWS Bedrock and Claude Sonnet 4 interactions
-
-## Prerequisites
-
-- Node.js 18+
-- Docker and Docker Compose
-- AWS Account with Bedrock access
-- PostgreSQL 15+
-- Redis 7+
-- ClickHouse (for analytics)
+### 🚀 Automation Scripts
+- **Deployment Script**: Automated deployment with prerequisites checking
+- **Testing Tools**: Built-in validation and testing capabilities
+- **Environment Setup**: Streamlined development environment configuration
 
 ## Quick Start
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd aws-blog-writing-ai-agent
+   git clone https://github.com/Nadanne1/GenAIPOC.git
+   cd GenAIPOC
    ```
 
-2. **Set up environment variables**
+2. **Navigate to the MCP integration toolkit**
    ```bash
-   cp .env.example .env
-   # Edit .env with your AWS credentials and configuration
+   cd tools/mcp-integration
    ```
 
-3. **Start the services with Docker Compose**
+3. **Install dependencies**
    ```bash
-   npm run dev
+   pip install -r requirements.txt
    ```
 
-4. **Access the API**
-   - API Gateway: http://localhost:3000
-   - Swagger Documentation: http://localhost:3000/api-docs
-   - Health Check: http://localhost:3000/health
+4. **Follow the integration guide**
+   - Read the [complete guide](tools/mcp-integration/README.md)
+   - Try the [example server](tools/mcp-integration/examples/simple_mcp_server.py)
+   - Use the [deployment script](tools/mcp-integration/scripts/deploy.sh)
 
-## Configuration
+## Repository Structure
 
-### AWS Bedrock Setup
-
-1. Ensure you have access to Claude Sonnet 4 in AWS Bedrock
-2. Configure your AWS credentials in the `.env` file
-3. Set the appropriate AWS region where Bedrock is available
-
-### Required Environment Variables
-
-```bash
-# AWS Configuration
-AWS_REGION=us-east-1
-AWS_ACCESS_KEY_ID=your_access_key
-AWS_SECRET_ACCESS_KEY=your_secret_key
-
-# Database URLs
-POSTGRES_URL=postgresql://postgres:password@localhost:5432/aws_blog_agent
-REDIS_URL=redis://localhost:6379
-
-# Bedrock Configuration
-BEDROCK_MAX_TOKENS=4096
-BEDROCK_TEMPERATURE=0.7
+```
+tools/mcp-integration/
+├── README.md                    # Complete integration guide
+├── examples/
+│   ├── simple_mcp_server.py    # Example MCP server implementation
+│   └── client_example.py       # Example client for testing
+├── scripts/
+│   └── deploy.sh               # Automated deployment script
+└── requirements.txt            # Python dependencies
 ```
 
-## API Endpoints
+## Features
 
-### Content Generation
-- `POST /api/content/generate` - Generate blog content from requirements
-- `POST /api/content/generate-from-repo` - Generate content from GitHub repository
-- `GET /api/content/:id` - Retrieve generated content
+- ✅ **Two Integration Approaches**: Choose between CLI simplicity or SDK flexibility
+- ✅ **Complete Documentation**: Step-by-step instructions with troubleshooting
+- ✅ **Working Code Examples**: Ready-to-run Python implementations
+- ✅ **Automated Deployment**: One-command deployment with error handling
+- ✅ **Authentication Support**: Multiple authentication methods supported
+- ✅ **Production Ready**: Best practices for security and monitoring
 
-### Blog Analysis
-- `POST /api/analysis/analyze-blog` - Analyze existing blog
-- `GET /api/analysis/patterns` - Get extracted content patterns
-- `POST /api/analysis/analyze-repository` - Analyze GitHub repository
+## Prerequisites
 
-### Quality Control
-- `POST /api/quality/validate` - Validate content quality
-- `POST /api/quality/check-technical` - Check technical accuracy
-- `POST /api/quality/check-style` - Validate writing style
+- **AWS Account**: With appropriate permissions for IAM roles, Lambda functions, and Cognito resources
+- **AWS Credentials**: Configured on your development environment
+- **Python**: Version 3.10 or higher (3.6+ for SDK approach)
+- **Required Packages**: Listed in requirements.txt
 
-### Review System
-- `POST /api/review/initiate` - Start review process
-- `POST /api/review/:id/feedback` - Submit review feedback
-- `GET /api/review/:id/status` - Get review status
+## Integration Options
 
-## Development
+### Option 1: CLI-based Deployment (Recommended for Quick Setup)
+Perfect for rapid prototyping and simple deployments using the AgentCore CLI.
 
-### Running Individual Services
+### Option 2: SDK-based Integration (Advanced)
+Provides full control and customization options using Python SDKs for production systems.
 
-Each service can be run independently for development:
+## Getting Started
 
+1. **Read the Guide**: Start with the [comprehensive integration guide](tools/mcp-integration/README.md)
+2. **Try Examples**: Run the example MCP server and client
+3. **Deploy**: Use the automated deployment script
+4. **Customize**: Adapt the examples for your specific use case
+
+## Example Usage
+
+### Deploy an MCP Server
 ```bash
-# Bedrock Service
-cd services/bedrock-service
-npm install
-npm run dev
-
-# Content Generator
-cd services/content-generator
-npm install
-npm run dev
+cd tools/mcp-integration
+./scripts/deploy.sh deploy
 ```
 
-### Running Tests
-
+### Connect to Existing MCP Server
 ```bash
-# Run all tests
-npm test
-
-# Run tests for specific service
-cd services/bedrock-service
-npm test
+cd tools/mcp-integration
+./scripts/deploy.sh gateway http://your-mcp-server-url
 ```
 
-### Building for Production
-
+### Test Your Deployment
 ```bash
-# Build all services
-npm run build
-
-# Build specific service
-cd services/bedrock-service
-npm run build
+export BEARER_TOKEN="your_token_here"
+./scripts/deploy.sh test
 ```
 
-## Deployment
+## Documentation
 
-### Docker Deployment
+- **[Complete Integration Guide](tools/mcp-integration/README.md)**: Detailed instructions for both approaches
+- **[Example Server](tools/mcp-integration/examples/simple_mcp_server.py)**: Working MCP server implementation
+- **[Client Example](tools/mcp-integration/examples/client_example.py)**: Complete client with authentication
+- **[Deployment Script](tools/mcp-integration/scripts/deploy.sh)**: Automated deployment tool
 
-```bash
-# Build and start all services
-docker-compose up --build
+## Support
 
-# Scale specific services
-docker-compose up --scale content-generator=3
-```
+For help with MCP integration:
 
-### Kubernetes Deployment
-
-Kubernetes manifests are available in the `k8s/` directory:
-
-```bash
-kubectl apply -f k8s/
-```
-
-## Monitoring and Observability
-
-The system includes comprehensive monitoring:
-
-- **Metrics**: Prometheus metrics for all services
-- **Logging**: Structured logging with Winston
-- **Tracing**: Distributed tracing with Jaeger
-- **Health Checks**: Built-in health check endpoints
-- **Analytics**: ClickHouse for performance analytics
-
-## Usage Examples
-
-### Generate Content from GitHub Repository
-
-```bash
-curl -X POST http://localhost:3000/api/content/generate-from-repo \
-  -H "Content-Type: application/json" \
-  -d '{
-    "repositoryUrl": "https://github.com/aws-samples/serverless-webapp",
-    "requirements": {
-      "topic": "Building Serverless Web Applications",
-      "targetAudience": "developer",
-      "awsServices": ["Lambda", "API Gateway", "DynamoDB"],
-      "contentType": "tutorial"
-    }
-  }'
-```
-
-### Validate Content Quality
-
-```bash
-curl -X POST http://localhost:3000/api/quality/validate \
-  -H "Content-Type: application/json" \
-  -d '{
-    "contentId": "content-123"
-  }'
-```
+- **Integration Issues**: Check the [troubleshooting section](tools/mcp-integration/README.md#troubleshooting)
+- **AWS Bedrock**: Review AWS Bedrock documentation
+- **MCP Protocol**: Join the MCP community for protocol-related questions
+- **Repository Issues**: Create an issue in this repository
 
 ## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Add tests for new functionality
+4. Test thoroughly
 5. Submit a pull request
-
-## Security
-
-- All services use JWT authentication
-- Data encryption at rest and in transit
-- AWS IAM integration for secure access
-- Rate limiting and input validation
-- Security headers with Helmet.js
-
-## Performance
-
-- Redis caching for frequently accessed data
-- Connection pooling for databases
-- Horizontal scaling support
-- Optimized Bedrock token usage
-- Async processing for long-running operations
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Bedrock Access Denied**
-   - Ensure your AWS credentials have Bedrock permissions
-   - Check if Claude Sonnet 4 is available in your region
-
-2. **Database Connection Issues**
-   - Verify PostgreSQL is running and accessible
-   - Check connection string format
-
-3. **Service Communication Errors**
-   - Ensure all services are running
-   - Check Docker network configuration
-
-### Logs
-
-View service logs:
-```bash
-# All services
-docker-compose logs -f
-
-# Specific service
-docker-compose logs -f bedrock-service
-```
-
-## Tools and Utilities
-
-### MCP Integration Guide
-
-For integrating Model Context Protocol (MCP) servers with Amazon Bedrock AgentCore, see the comprehensive guide in [`tools/mcp-integration/`](tools/mcp-integration/README.md).
-
-The guide includes:
-- Step-by-step integration instructions
-- CLI and SDK-based approaches
-- Complete code examples
-- Deployment scripts
-- Troubleshooting tips
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License - see the LICENSE file for details.
 
-## Support
+## Additional Resources
 
-For issues and questions:
-- Create an issue in the repository
-- Check the troubleshooting section
-- Review the API documentation at `/api-docs`
+- [AWS Bedrock Documentation](https://docs.aws.amazon.com/bedrock/)
+- [Model Context Protocol Specification](https://modelcontextprotocol.io/)
+- [Amazon Bedrock AgentCore Documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html)
