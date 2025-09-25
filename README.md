@@ -1,142 +1,122 @@
-# MCP Server Integration Toolkit
+# GenAI POC Repository
 
-A comprehensive toolkit for integrating Model Context Protocol (MCP) servers with Amazon Bedrock AgentCore. This repository provides step-by-step guides, working examples, and automation scripts to help developers quickly deploy and connect MCP servers.
+This repository contains multiple Proof of Concept (POC) projects demonstrating various AI and AWS integrations.
 
-## What's Included
+## Projects
 
-### 📚 Complete Integration Guide
-- **CLI-based Deployment**: Quick setup using the AgentCore CLI
-- **SDK-based Integration**: Advanced programmatic integration using Python SDKs
-- **Authentication Methods**: Cognito OAuth2 and API key authentication
-- **Best Practices**: Security, monitoring, and production deployment guidelines
+### 🤖 MCP Server Integration Toolkit
+**Location**: `tools/mcp-integration/`
 
-### 🛠️ Working Examples
-- **Simple MCP Server**: Example server with echo, timestamp, and calculator tools
-- **Client Implementation**: Complete client with error handling and authentication
-- **Resource Management**: Examples of MCP resource handling
+A comprehensive toolkit for integrating Model Context Protocol (MCP) servers with Amazon Bedrock AgentCore.
 
-### 🚀 Automation Scripts
-- **Deployment Script**: Automated deployment with prerequisites checking
-- **Testing Tools**: Built-in validation and testing capabilities
-- **Environment Setup**: Streamlined development environment configuration
+**Features:**
+- CLI-based and SDK-based deployment approaches
+- Working examples with authentication
+- Automated deployment scripts
+- Complete documentation and troubleshooting guides
 
-## Quick Start
+**Quick Start:**
+```bash
+cd tools/mcp-integration
+pip install -r requirements.txt
+./scripts/deploy.sh deploy
+```
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Nadanne1/GenAIPOC.git
-   cd GenAIPOC
-   ```
+[📖 Full Documentation](tools/mcp-integration/README.md)
 
-2. **Navigate to the MCP integration toolkit**
-   ```bash
-   cd tools/mcp-integration
-   ```
+### 📄 PDF to Markdown Converter
+**Location**: `pdf-to-markdown-poc/`
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+An intelligent PDF to Markdown converter using AWS Bedrock and Claude Sonnet for high-quality document conversion.
 
-4. **Follow the integration guide**
-   - Read the [complete guide](tools/mcp-integration/README.md)
-   - Try the [example server](tools/mcp-integration/examples/simple_mcp_server.py)
-   - Use the [deployment script](tools/mcp-integration/scripts/deploy.sh)
+**Features:**
+- AWS S3 integration for file storage
+- Claude Sonnet 4 for intelligent text extraction
+- Image extraction and cloud storage
+- Structured markdown output with tables
+- Batch processing capabilities
+
+**Quick Start:**
+```bash
+cd pdf-to-markdown-poc
+# Follow the setup instructions in the README
+```
+
+[📖 Full Documentation](pdf-to-markdown-poc/README.md)
 
 ## Repository Structure
 
 ```
-tools/mcp-integration/
-├── README.md                    # Complete integration guide
-├── examples/
-│   ├── simple_mcp_server.py    # Example MCP server implementation
-│   └── client_example.py       # Example client for testing
-├── scripts/
-│   └── deploy.sh               # Automated deployment script
-└── requirements.txt            # Python dependencies
+GenAIPOC/
+├── tools/
+│   └── mcp-integration/          # MCP Server Integration Toolkit
+│       ├── README.md
+│       ├── examples/
+│       ├── scripts/
+│       └── requirements.txt
+├── pdf-to-markdown-poc/          # PDF to Markdown Converter
+│   ├── README.md
+│   ├── pdftomarkdown.ipynb
+│   └── LICENSE
+├── pdftomarkdown.ipynb           # Legacy PDF converter (deprecated)
+└── README.md                     # This file
 ```
-
-## Features
-
-- ✅ **Two Integration Approaches**: Choose between CLI simplicity or SDK flexibility
-- ✅ **Complete Documentation**: Step-by-step instructions with troubleshooting
-- ✅ **Working Code Examples**: Ready-to-run Python implementations
-- ✅ **Automated Deployment**: One-command deployment with error handling
-- ✅ **Authentication Support**: Multiple authentication methods supported
-- ✅ **Production Ready**: Best practices for security and monitoring
-
-## Prerequisites
-
-- **AWS Account**: With appropriate permissions for IAM roles, Lambda functions, and Cognito resources
-- **AWS Credentials**: Configured on your development environment
-- **Python**: Version 3.10 or higher (3.6+ for SDK approach)
-- **Required Packages**: Listed in requirements.txt
-
-## Integration Options
-
-### Option 1: CLI-based Deployment (Recommended for Quick Setup)
-Perfect for rapid prototyping and simple deployments using the AgentCore CLI.
-
-### Option 2: SDK-based Integration (Advanced)
-Provides full control and customization options using Python SDKs for production systems.
 
 ## Getting Started
 
-1. **Read the Guide**: Start with the [comprehensive integration guide](tools/mcp-integration/README.md)
-2. **Try Examples**: Run the example MCP server and client
-3. **Deploy**: Use the automated deployment script
-4. **Customize**: Adapt the examples for your specific use case
+1. **Choose your project**: Navigate to the specific POC folder
+2. **Follow the documentation**: Each project has its own detailed README
+3. **Install dependencies**: Each project lists its specific requirements
+4. **Run examples**: Try the provided examples and scripts
 
-## Example Usage
+## Prerequisites
 
-### Deploy an MCP Server
-```bash
-cd tools/mcp-integration
-./scripts/deploy.sh deploy
-```
+### General Requirements
+- AWS Account with appropriate permissions
+- AWS CLI configured with credentials
+- Python 3.8+ (specific versions noted in each project)
 
-### Connect to Existing MCP Server
-```bash
-cd tools/mcp-integration
-./scripts/deploy.sh gateway http://your-mcp-server-url
-```
-
-### Test Your Deployment
-```bash
-export BEARER_TOKEN="your_token_here"
-./scripts/deploy.sh test
-```
-
-## Documentation
-
-- **[Complete Integration Guide](tools/mcp-integration/README.md)**: Detailed instructions for both approaches
-- **[Example Server](tools/mcp-integration/examples/simple_mcp_server.py)**: Working MCP server implementation
-- **[Client Example](tools/mcp-integration/examples/client_example.py)**: Complete client with authentication
-- **[Deployment Script](tools/mcp-integration/scripts/deploy.sh)**: Automated deployment tool
-
-## Support
-
-For help with MCP integration:
-
-- **Integration Issues**: Check the [troubleshooting section](tools/mcp-integration/README.md#troubleshooting)
-- **AWS Bedrock**: Review AWS Bedrock documentation
-- **MCP Protocol**: Join the MCP community for protocol-related questions
-- **Repository Issues**: Create an issue in this repository
+### Project-Specific Requirements
+- **MCP Integration**: Python 3.10+, AWS Bedrock access
+- **PDF to Markdown**: Python 3.8+, AWS S3 and Bedrock access
 
 ## Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+2. Create a feature branch for your POC or enhancement
+3. Follow the existing project structure
+4. Add comprehensive documentation
+5. Test thoroughly
+6. Submit a pull request
+
+## Project Guidelines
+
+When adding new POCs to this repository:
+
+1. **Create a dedicated folder** with a descriptive name
+2. **Include a comprehensive README** with setup instructions
+3. **Provide working examples** that can be run immediately
+4. **Document prerequisites** and dependencies clearly
+5. **Include error handling** and troubleshooting guides
+6. **Follow security best practices** for AWS integrations
 
 ## License
 
-MIT License - see the LICENSE file for details.
+Each project may have its own license. Check individual project folders for specific licensing information.
+
+- **PDF to Markdown POC**: MIT License
+- **MCP Integration Toolkit**: MIT License
+
+## Support
+
+For project-specific issues:
+- Check the individual project's README and troubleshooting section
+- Create an issue in this repository with the project name in the title
+- Review AWS documentation for service-specific questions
 
 ## Additional Resources
 
 - [AWS Bedrock Documentation](https://docs.aws.amazon.com/bedrock/)
-- [Model Context Protocol Specification](https://modelcontextprotocol.io/)
-- [Amazon Bedrock AgentCore Documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html)
+- [AWS S3 Documentation](https://docs.aws.amazon.com/s3/)
+- [Model Context Protocol](https://modelcontextprotocol.io/)
+- [Claude AI Documentation](https://docs.anthropic.com/)
