@@ -1,210 +1,277 @@
-# PDF to Markdown Converter
+# AWS Blog Writing AI Agent
 
-A Python-based tool that converts PDF documents to Markdown format using AWS services. The tool extracts text and images from PDFs stored in S3, processes them with Claude AI via AWS Bedrock, and outputs clean Markdown files with embedded image references.
+An intelligent content generation system that analyzes existing AWS blogs, learns from their patterns and styles, and generates high-quality technical blog content using AWS Bedrock and Claude Sonnet 4.
 
 ## Features
 
-- **PDF Processing**: Extracts text and images from PDF documents using PyMuPDF
-- **AI-Powered Conversion**: Uses Claude Sonnet 4.0 via AWS Bedrock for intelligent Markdown conversion
-- **S3 Integration**: Reads PDFs from S3 and stores outputs (Markdown + images) back to S3
-- **Image Handling**: Automatically extracts and uploads images with proper Markdown references
-- **Batch Processing**: Support for processing multiple PDFs in one operation
-- **Chunked Processing**: Handles large documents by processing them in chunks
-- **Fallback Conversion**: Basic conversion method if AI processing fails
+- **GitHub Repository Analysis**: Automatically analyzes GitHub repositories to understand solutions and generate relevant blog content
+- **AWS Bedrock Integration**: Leverages Claude Sonnet 4 for intelligent content generation and analysis
+- **MCP Integration**: Connects with AWS MCP server for accurate technical information and architecture diagrams
+- **Quality Control**: Comprehensive validation for technical accuracy, style compliance, and content quality
+- **Multi-stage Review System**: Structured review workflow with feedback incorporation
+- **Microservices Architecture**: Scalable, containerized services with Docker and Kubernetes support
+
+## Architecture
+
+The system follows a microservices architecture with the following components:
+
+- **API Gateway**: Central entry point with authentication, rate limiting, and request routing
+- **Blog Analyzer Service**: Analyzes existing AWS blogs to extract patterns and styles
+- **Content Generator Service**: Generates blog content using Claude Sonnet 4 and learned patterns
+- **MCP Connector Service**: Integrates with AWS MCP server for technical validation
+- **Quality Control Service**: Validates content quality and technical accuracy
+- **Review System Service**: Manages multi-stage review workflows
+- **Bedrock Service**: Handles all AWS Bedrock and Claude Sonnet 4 interactions
 
 ## Prerequisites
 
-- Python 3.8+
-- AWS Account with appropriate permissions
-- Access to AWS Bedrock (Claude Sonnet 4.0)
-- S3 buckets for input and output
+- Node.js 18+
+- Docker and Docker Compose
+- AWS Account with Bedrock access
+- PostgreSQL 15+
+- Redis 7+
+- ClickHouse (for analytics)
 
-## Installation
+## Quick Start
 
-1. **Clone the repository**:
+1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd genai-poc
+   cd aws-blog-writing-ai-agent
    ```
 
-2. **Install required packages**:
+2. **Set up environment variables**
    ```bash
-   # Using conda (recommended)
-   conda install -c conda-forge python-dotenv pymupdf pandas boto3 ipython
-
-   # Or using pip
-   pip install python-dotenv pymupdf pandas boto3 ipython
+   cp .env.example .env
+   # Edit .env with your AWS credentials and configuration
    ```
 
-3. **Set up AWS credentials**:
-   - Configure AWS CLI: `aws configure`
-   - Or set environment variables: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`
-   - Ensure your AWS account has access to Bedrock and the Claude Sonnet 4.0 model
+3. **Start the services with Docker Compose**
+   ```bash
+   npm run dev
+   ```
+
+4. **Access the API**
+   - API Gateway: http://localhost:3000
+   - Swagger Documentation: http://localhost:3000/api-docs
+   - Health Check: http://localhost:3000/health
 
 ## Configuration
 
-Create a `.env` file in the project root with your settings:
+### AWS Bedrock Setup
 
-```env
+1. Ensure you have access to Claude Sonnet 4 in AWS Bedrock
+2. Configure your AWS credentials in the `.env` file
+3. Set the appropriate AWS region where Bedrock is available
+
+### Required Environment Variables
+
+```bash
 # AWS Configuration
 AWS_REGION=us-east-1
-BEDROCK_REGION=us-east-1
+AWS_ACCESS_KEY_ID=your_access_key
+AWS_SECRET_ACCESS_KEY=your_secret_key
 
-# S3 Bucket Configuration
-INPUT_BUCKET=your-input-bucket-name
-OUTPUT_BUCKET=your-output-bucket-name
-IMAGES_FOLDER=extracted_images
+# Database URLs
+POSTGRES_URL=postgresql://postgres:password@localhost:5432/aws_blog_agent
+REDIS_URL=redis://localhost:6379
+
+# Bedrock Configuration
+BEDROCK_MAX_TOKENS=4096
+BEDROCK_TEMPERATURE=0.7
 ```
 
-## Usage
+## API Endpoints
 
-### Using Jupyter Notebook
+### Content Generation
+- `POST /api/content/generate` - Generate blog content from requirements
+- `POST /api/content/generate-from-repo` - Generate content from GitHub repository
+- `GET /api/content/:id` - Retrieve generated content
 
-1. **Start Jupyter**:
-   ```bash
-   jupyter notebook
-   ```
+### Blog Analysis
+- `POST /api/analysis/analyze-blog` - Analyze existing blog
+- `GET /api/analysis/patterns` - Get extracted content patterns
+- `POST /api/analysis/analyze-repository` - Analyze GitHub repository
 
-2. **Open the notebook**: `pdftomarkdown.ipynb`
+### Quality Control
+- `POST /api/quality/validate` - Validate content quality
+- `POST /api/quality/check-technical` - Check technical accuracy
+- `POST /api/quality/check-style` - Validate writing style
 
-3. **Run the setup cells** (Cells 1-3) to initialize the environment
+### Review System
+- `POST /api/review/initiate` - Start review process
+- `POST /api/review/:id/feedback` - Submit review feedback
+- `GET /api/review/:id/status` - Get review status
 
-4. **Process a single PDF**:
-   ```python
-   # Example: Process a PDF from your input bucket
-   summary, markdown_content = process_pdf(
-       input_bucket="your-input-bucket",
-       pdf_key="path/to/your/document.pdf"
-   )
-   ```
+## Development
 
-5. **List available PDFs**:
-   ```python
-   # List all PDFs in your input bucket
-   pdf_files = list_pdfs_in_bucket("your-input-bucket")
-   ```
+### Running Individual Services
 
-6. **Batch process multiple PDFs**:
-   ```python
-   # Process multiple PDFs at once
-   results = batch_process_pdfs("your-input-bucket", pdf_files, max_files=5)
-   ```
+Each service can be run independently for development:
 
-7. **Preview generated Markdown**:
-   ```python
-   # Preview the converted Markdown
-   preview_markdown(markdown_content, max_lines=50)
-   ```
+```bash
+# Bedrock Service
+cd services/bedrock-service
+npm install
+npm run dev
 
-### Key Functions
-
-- `process_pdf(bucket, pdf_key)` - Process a single PDF file
-- `list_pdfs_in_bucket(bucket)` - List all PDF files in a bucket
-- `batch_process_pdfs(bucket, pdf_list)` - Process multiple PDFs
-- `preview_markdown(content)` - Preview generated Markdown
-
-## AWS Permissions Required
-
-Your AWS user/role needs the following permissions:
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "s3:GetObject",
-                "s3:PutObject",
-                "s3:ListBucket"
-            ],
-            "Resource": [
-                "arn:aws:s3:::your-input-bucket/*",
-                "arn:aws:s3:::your-output-bucket/*",
-                "arn:aws:s3:::your-input-bucket",
-                "arn:aws:s3:::your-output-bucket"
-            ]
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "bedrock:InvokeModel"
-            ],
-            "Resource": "arn:aws:bedrock:us-east-1::foundation-model/us.anthropic.claude-sonnet-4-20250514-v1:0"
-        }
-    ]
-}
+# Content Generator
+cd services/content-generator
+npm install
+npm run dev
 ```
 
-## Output Structure
+### Running Tests
 
-The tool creates the following output structure in your S3 bucket:
+```bash
+# Run all tests
+npm test
 
-```
-output-bucket/
-├── document.md                    # Converted Markdown file
-└── extracted_images/              # Extracted images folder
-    ├── document_page_1_img_1.png
-    ├── document_page_1_img_2.png
-    └── ...
+# Run tests for specific service
+cd services/bedrock-service
+npm test
 ```
 
-## Configuration Options
+### Building for Production
 
-You can customize the processing behavior by modifying the `Config` class:
+```bash
+# Build all services
+npm run build
 
-- `MAX_PAGES_PER_CHUNK`: Number of pages to process in each chunk (default: 5)
-- `MAX_INPUT_TOKENS`: Maximum input tokens for Claude (default: 150,000)
+# Build specific service
+cd services/bedrock-service
+npm run build
+```
 
-## Troubleshooting
+## Deployment
 
-### Common Issues
+### Docker Deployment
 
-1. **AWS Credentials Error**:
-   - Ensure AWS credentials are properly configured
-   - Check that your region settings match your resources
+```bash
+# Build and start all services
+docker-compose up --build
 
-2. **Bedrock Access Denied**:
-   - Verify you have access to AWS Bedrock in your region
-   - Ensure the Claude Sonnet 4.0 model is available in your account
+# Scale specific services
+docker-compose up --scale content-generator=3
+```
 
-3. **S3 Permission Errors**:
-   - Check bucket permissions and policies
-   - Verify bucket names in your configuration
+### Kubernetes Deployment
 
-4. **Large Document Processing**:
-   - The tool automatically chunks large documents
-   - Adjust `MAX_PAGES_PER_CHUNK` if needed
+Kubernetes manifests are available in the `k8s/` directory:
 
-### Debug Mode
+```bash
+kubectl apply -f k8s/
+```
 
-Enable detailed logging by checking the notebook output cells for processing status and error messages.
+## Monitoring and Observability
 
-## Example Workflow
+The system includes comprehensive monitoring:
 
-1. Upload your PDF files to the input S3 bucket
-2. Run the Jupyter notebook
-3. Execute the processing cells
-4. Check the output bucket for:
-   - Converted Markdown files
-   - Extracted images in the `extracted_images/` folder
-5. Download and review the generated Markdown
+- **Metrics**: Prometheus metrics for all services
+- **Logging**: Structured logging with Winston
+- **Tracing**: Distributed tracing with Jaeger
+- **Health Checks**: Built-in health check endpoints
+- **Analytics**: ClickHouse for performance analytics
+
+## Usage Examples
+
+### Generate Content from GitHub Repository
+
+```bash
+curl -X POST http://localhost:3000/api/content/generate-from-repo \
+  -H "Content-Type: application/json" \
+  -d '{
+    "repositoryUrl": "https://github.com/aws-samples/serverless-webapp",
+    "requirements": {
+      "topic": "Building Serverless Web Applications",
+      "targetAudience": "developer",
+      "awsServices": ["Lambda", "API Gateway", "DynamoDB"],
+      "contentType": "tutorial"
+    }
+  }'
+```
+
+### Validate Content Quality
+
+```bash
+curl -X POST http://localhost:3000/api/quality/validate \
+  -H "Content-Type: application/json" \
+  -d '{
+    "contentId": "content-123"
+  }'
+```
 
 ## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Test thoroughly
+4. Add tests for new functionality
 5. Submit a pull request
+
+## Security
+
+- All services use JWT authentication
+- Data encryption at rest and in transit
+- AWS IAM integration for secure access
+- Rate limiting and input validation
+- Security headers with Helmet.js
+
+## Performance
+
+- Redis caching for frequently accessed data
+- Connection pooling for databases
+- Horizontal scaling support
+- Optimized Bedrock token usage
+- Async processing for long-running operations
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Bedrock Access Denied**
+   - Ensure your AWS credentials have Bedrock permissions
+   - Check if Claude Sonnet 4 is available in your region
+
+2. **Database Connection Issues**
+   - Verify PostgreSQL is running and accessible
+   - Check connection string format
+
+3. **Service Communication Errors**
+   - Ensure all services are running
+   - Check Docker network configuration
+
+### Logs
+
+View service logs:
+```bash
+# All services
+docker-compose logs -f
+
+# Specific service
+docker-compose logs -f bedrock-service
+```
+
+## Tools and Utilities
+
+### MCP Integration Guide
+
+For integrating Model Context Protocol (MCP) servers with Amazon Bedrock AgentCore, see the comprehensive guide in [`tools/mcp-integration/`](tools/mcp-integration/README.md).
+
+The guide includes:
+- Step-by-step integration instructions
+- CLI and SDK-based approaches
+- Complete code examples
+- Deployment scripts
+- Troubleshooting tips
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT License - see LICENSE file for details.
 
 ## Support
 
 For issues and questions:
-- Check the troubleshooting section above
-- Review AWS Bedrock and S3 documentation
-- Open an issue in the repository
+- Create an issue in the repository
+- Check the troubleshooting section
+- Review the API documentation at `/api-docs`
