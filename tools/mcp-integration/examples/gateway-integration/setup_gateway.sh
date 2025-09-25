@@ -59,10 +59,10 @@ EOF
 echo "✅ Gateway configuration created: gateway_config.json"
 
 # Set up authentication (reuse existing Cognito setup if available)
-if [ -f "authorizer_config.json" ] && [ -s "authorizer_config.json" ]; then
+if [ -f "../../authorizer_config.json" ] && [ -s "../../authorizer_config.json" ]; then
     echo "🔐 Found existing authentication configuration"
-    POOL_ID=$(jq -r '.customJWTAuthorizer.discoveryUrl' authorizer_config.json | sed 's/.*\/\([^\/]*\)\/.*/\1/')
-    CLIENT_ID=$(jq -r '.customJWTAuthorizer.allowedClients[0]' authorizer_config.json)
+    POOL_ID=$(jq -r '.customJWTAuthorizer.discoveryUrl' ../../authorizer_config.json | sed 's/.*\/\([^\/]*\)\/.*/\1/')
+    CLIENT_ID=$(jq -r '.customJWTAuthorizer.allowedClients[0]' ../../authorizer_config.json)
     
     if [ "$POOL_ID" != "null" ] && [ "$CLIENT_ID" != "null" ]; then
         echo "✅ Using existing Cognito configuration"
@@ -70,11 +70,11 @@ if [ -f "authorizer_config.json" ] && [ -s "authorizer_config.json" ]; then
         echo "   Client ID: $CLIENT_ID"
     else
         echo "⚠️  Existing auth config is invalid, setting up new authentication..."
-        source setup_cognito.sh
+        source ../direct-deployment/setup_cognito.sh
     fi
 else
     echo "🔐 Setting up authentication for gateway..."
-    source setup_cognito.sh
+    source ../direct-deployment/setup_cognito.sh
 fi
 
 # Create gateway deployment script
@@ -102,7 +102,7 @@ echo "⚙️  Configuring AgentCore..."
 agentcore configure \
     -e examples/mcp_gateway.py \
     --protocol MCP \
-    --authorizer-config "$(cat authorizer_config.json)" \
+    --authorizer-config "$(cat ../../authorizer_config.json)" \
     --region us-east-1 \
     --env TARGET_URL="$TARGET_URL"
 
@@ -118,7 +118,7 @@ echo "2. Set environment variables:"
 echo "   export AGENT_ARN=\"<your_gateway_agent_arn>\""
 echo "   export BEARER_TOKEN=\"<your_bearer_token>\""
 echo "3. Test the gateway:"
-echo "   python3 examples/gateway_client.py"
+echo "   python3 examples/gateway-integration/gateway_client.py"
 EOF
 
 chmod +x deploy_gateway.sh
@@ -128,7 +128,7 @@ echo "✅ Gateway deployment script created: deploy_gateway.sh"
 # Create gateway client for testing
 echo "🧪 Creating gateway test client..."
 
-cat > examples/gateway_client.py << 'EOF'
+cat > examples/gateway-integration/gateway_client.py << 'EOF'
 #!/usr/bin/env python3
 """
 Test client for MCP Gateway deployed on AgentCore
@@ -234,9 +234,9 @@ if __name__ == "__main__":
     asyncio.run(test_gateway())
 EOF
 
-chmod +x examples/gateway_client.py
+chmod +x examples/gateway-integration/gateway_client.py
 
-echo "✅ Gateway test client created: examples/gateway_client.py"
+echo "✅ Gateway test client created: examples/gateway-integration/gateway_client.py"
 
 echo ""
 echo "🎉 MCP Gateway setup completed!"
@@ -244,7 +244,7 @@ echo "=" * 50
 echo "📋 Configuration Summary:"
 echo "Gateway Name: $GATEWAY_NAME"
 echo "Target URL: $TARGET_URL"
-echo "Auth Config: authorizer_config.json"
+echo "Auth Config: ../../authorizer_config.json"
 echo ""
 echo "🚀 Next Steps:"
 echo "1. Deploy the gateway:"
@@ -252,7 +252,7 @@ echo "   ./deploy_gateway.sh"
 echo ""
 echo "2. Test the gateway:"
 echo "   export AGENT_ARN=\"<from_deployment_output>\""
-echo "   python3 examples/gateway_client.py"
+echo "   python3 examples/gateway-integration/gateway_client.py"
 echo ""
 echo "💡 The gateway will proxy requests to your target MCP server"
 echo "   while providing AWS authentication and AgentCore integration."

@@ -251,7 +251,7 @@ def start_external_server():
     import subprocess
     import sys
     
-    cmd = [sys.executable, "examples/external_mcp_server.py", "--port", "8001"]
+    cmd = [sys.executable, "external_mcp_server.py", "--port", "8001"]
     logger.info(f"Starting external server: {' '.join(cmd)}")
     return subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
 
@@ -261,7 +261,7 @@ def start_gateway():
     import subprocess
     import sys
     
-    cmd = [sys.executable, "examples/mcp_gateway.py", 
+    cmd = [sys.executable, "mcp_gateway.py", 
            "--target-url", "http://localhost:8001/mcp", 
            "--port", "8002"]
     logger.info(f"Starting gateway: {' '.join(cmd)}")
