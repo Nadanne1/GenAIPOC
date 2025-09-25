@@ -1,0 +1,39 @@
+# Example AgentCore Configuration File
+# This file is created automatically by 'agentcore configure' command
+# Copy this to .bedrock_agentcore.yaml and customize for your deployment
+
+default_agent: mcp_server
+agents:
+  mcp_server:
+    name: mcp_server
+    entrypoint: examples/mcp_server.py
+    platform: linux/arm64
+    container_runtime: none
+    aws:
+      execution_role: null  # Will be auto-created
+      execution_role_auto_create: true
+      account: YOUR_AWS_ACCOUNT_ID
+      region: us-east-1
+      ecr_repository: null  # Will be auto-created
+      ecr_auto_create: true
+      network_configuration:
+        network_mode: PUBLIC
+      protocol_configuration:
+        server_protocol: MCP
+      observability:
+        enabled: true
+    bedrock_agentcore:
+      agent_id: null  # Populated after deployment
+      agent_arn: null  # Populated after deployment
+      agent_session_id: null
+    codebuild:
+      project_name: null  # Populated after deployment
+      execution_role: null  # Populated after deployment
+      source_bucket: null  # Populated after deployment
+    authorizer_configuration:
+      customJWTAuthorizer:
+        discoveryUrl: https://cognito-idp.us-east-1.amazonaws.com/YOUR_POOL_ID/.well-known/openid-configuration
+        allowedClients:
+        - YOUR_CLIENT_ID
+    request_header_configuration: null
+    oauth_configuration: null

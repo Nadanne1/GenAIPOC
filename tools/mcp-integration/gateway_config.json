@@ -1,0 +1,10 @@
+{
+  "gateway_name": "mcp-gateway",
+  "target_url": "http://localhost:8001/mcp",
+  "proxy_mode": true,
+  "authentication": {
+    "type": "oauth2",
+    "provider": "cognito"
+  },
+  "created_at": "2025-09-25T19:42:40Z"
+}

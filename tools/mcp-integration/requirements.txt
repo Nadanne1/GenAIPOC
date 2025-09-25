@@ -1,23 +1,17 @@
-# MCP Integration Requirements
-# Core MCP and AgentCore packages
-mcp>=1.0.0
-bedrock-agentcore-starter-toolkit>=0.1.13
-# bedrock-agentcore>=1.0.0  # Not available yet
-# strands-agents>=1.0.0     # Not available yet
+# MCP Integration Requirements - Verified Working Versions
+# Core MCP package (REQUIRED for FastMCP)
+mcp>=1.15.0
 
-# AWS SDK
+# AgentCore CLI (REQUIRED for deployment)
+bedrock-agentcore-starter-toolkit>=0.1.13
+
+# AWS SDK (REQUIRED for Cognito authentication)
 boto3>=1.34.0
 botocore>=1.34.0
 
-# HTTP client
+# HTTP client (used by MCP client)
 requests>=2.31.0
 
-# Development and testing
+# Development and testing (optional)
 pytest>=7.4.0
 pytest-asyncio>=0.21.0
-black>=23.0.0
-flake8>=6.0.0
-
-# Optional: For advanced features
-pydantic>=2.0.0
-asyncio-mqtt>=0.13.0

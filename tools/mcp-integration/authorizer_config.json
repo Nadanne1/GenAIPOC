@@ -1,0 +1,7 @@
+
+{
+  "customJWTAuthorizer": {
+    "discoveryUrl": "https://cognito-idp.us-east-1.amazonaws.com/YOUR_POOL_ID/.well-known/openid-configuration",
+    "allowedClients": ["YOUR_CLIENT_ID"]
+  }
+}
