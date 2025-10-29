@@ -113,21 +113,18 @@ Federal Reserve Reports
 - **AWS Bedrock** - Foundation model hosting
 - **Claude Sonnet 4** - Advanced reasoning and analysis
 - **Bedrock Knowledge Base** - RAG for document retrieval
-- **Strands Framework** - Agent orchestration
+- **[Strands Framework](https://strandsagents.com/)** - Agent orchestration
 - **AgentCore Runtime** - Serverless deployment platform
 - **FastAPI** - Web framework for the agent API
 
-## Cost Estimate
+## Cost Considerations
 
-### Local Development
-- Free (uses your AWS Bedrock quota)
+Costs will vary based on usage. Main cost factors:
+- AWS Bedrock model invocations
+- AgentCore compute time
+- Knowledge Base queries
 
-### AgentCore Deployment
-- **Compute**: ~$0.10 per hour of active use
-- **Bedrock**: ~$3-15 per 1M tokens (depending on usage)
-- **Knowledge Base**: ~$0.10 per 1K queries
-
-See [Cost Considerations](DEPLOYMENT_GUIDE.md#cost-considerations) for details.
+See AWS pricing documentation for current rates.
 
 ## Security
 
@@ -142,27 +139,14 @@ See [Security Best Practices](DEPLOYMENT_GUIDE.md#security-best-practices) for m
 
 Common issues and solutions are documented in the [Troubleshooting](DEPLOYMENT_GUIDE.md#troubleshooting) section.
 
-## Contributing
+## Documentation
 
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+For detailed information:
+- [Deployment Guide](DEPLOYMENT_GUIDE.md) - Complete deployment instructions
+- [Troubleshooting](DEPLOYMENT_GUIDE.md#troubleshooting) - Common issues and solutions
 
-## License
+## Technologies Used
 
-[Your License Here]
-
-## Support
-
-For questions or issues:
-- Check the [Deployment Guide](DEPLOYMENT_GUIDE.md)
-- Review [Troubleshooting](DEPLOYMENT_GUIDE.md#troubleshooting)
-- Open an issue on GitHub
-
-## Acknowledgments
-
-- Built with [Strands](https://github.com/anthropics/strands) by Anthropic
-- Powered by AWS Bedrock and Claude Sonnet 4
-- Uses AWS Bedrock AgentCore for deployment
+- AWS Bedrock and Claude Sonnet 4
+- [Strands agent framework](https://strandsagents.com/latest/documentation/docs/user-guide/quickstart/)
+- AWS Bedrock AgentCore for deployment
