@@ -461,7 +461,7 @@ docker run -p 8080:8080 \
 ## Additional Resources
 
 - [AWS Bedrock AgentCore Documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/)
-- [Strands Framework](https://github.com/anthropics/strands)
+- [Strands Framework](https://strandsagents.com/)
 - [Claude Sonnet 4 Model Card](https://docs.anthropic.com/claude/docs/models-overview)
 - [Bedrock Knowledge Bases](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html)
 
