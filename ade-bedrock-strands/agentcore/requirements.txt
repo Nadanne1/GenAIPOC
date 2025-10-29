@@ -1,0 +1,7 @@
+strands-agents
+fastapi
+uvicorn[standard]
+pydantic
+boto3
+python-dotenv
+aws-opentelemetry-distro

@@ -1,0 +1,958 @@
+{
+  "action": [
+    {
+      "title": "Last Action Hero",
+      "rating": 6.5,
+      "reviews": [
+        "Last Action Hero is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Last Action Hero kept me engaged throughout.",
+        "Enjoyed Last Action Hero. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Back in Action",
+      "rating": 5.9,
+      "reviews": [
+        "Back in Action is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Back in Action kept me engaged throughout.",
+        "Enjoyed Back in Action. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Looney Tunes: Back in Action",
+      "rating": 5.8,
+      "reviews": [
+        "Looney Tunes: Back in Action is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Looney Tunes: Back in Action kept me engaged throughout.",
+        "Enjoyed Looney Tunes: Back in Action. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "An Action Hero",
+      "rating": 7.0,
+      "reviews": [
+        "Absolutely loved An Action Hero! Couldn't look away.",
+        "An Action Hero is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. An Action Hero exceeded all expectations.",
+        "Outstanding work! An Action Hero is a must-watch."
+      ]
+    },
+    {
+      "title": "A Civil Action",
+      "rating": 6.6,
+      "reviews": [
+        "A Civil Action is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. A Civil Action kept me engaged throughout.",
+        "Enjoyed A Civil Action. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Missing in Action",
+      "rating": 5.5,
+      "reviews": [
+        "Missing in Action is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Missing in Action kept me engaged throughout.",
+        "Enjoyed Missing in Action. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Action Jackson",
+      "rating": 5.6,
+      "reviews": [
+        "Action Jackson is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Action Jackson kept me engaged throughout.",
+        "Enjoyed Action Jackson. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Action Point",
+      "rating": 5.1,
+      "reviews": [
+        "Action Point is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Action Point kept me engaged throughout.",
+        "Enjoyed Action Point. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "321 Action",
+      "rating": 1.0,
+      "reviews": [
+        "Mixed feelings about 321 Action. Some scenes were good, others not so much.",
+        "Expected more from 321 Action. It was okay but didn't meet my expectations.",
+        "321 Action has potential but falls short in execution."
+      ]
+    },
+    {
+      "title": "Missing in Action 2: The Beginning",
+      "rating": 5.3,
+      "reviews": [
+        "Missing in Action 2: The Beginning is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Missing in Action 2: The Beginning kept me engaged throughout.",
+        "Enjoyed Missing in Action 2: The Beginning. Not perfect but definitely entertaining."
+      ]
+    }
+  ],
+  "comedy": [
+    {
+      "title": "The King of Comedy",
+      "rating": 7.8,
+      "reviews": [
+        "Absolutely loved The King of Comedy! Couldn't look away.",
+        "The King of Comedy is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. The King of Comedy exceeded all expectations.",
+        "Outstanding work! The King of Comedy is a must-watch."
+      ]
+    },
+    {
+      "title": "A Midsummer Night's Sex Comedy",
+      "rating": 6.6,
+      "reviews": [
+        "A Midsummer Night's Sex Comedy is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. A Midsummer Night's Sex Comedy kept me engaged throughout.",
+        "Enjoyed A Midsummer Night's Sex Comedy. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Fear City: A Family-Style Comedy",
+      "rating": 7.5,
+      "reviews": [
+        "Absolutely loved Fear City: A Family-Style Comedy! Couldn't look away.",
+        "Fear City: A Family-Style Comedy is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Fear City: A Family-Style Comedy exceeded all expectations.",
+        "Outstanding work! Fear City: A Family-Style Comedy is a must-watch."
+      ]
+    },
+    {
+      "title": "King of Comedy",
+      "rating": 7.2,
+      "reviews": [
+        "Absolutely loved King of Comedy! Couldn't look away.",
+        "King of Comedy is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. King of Comedy exceeded all expectations.",
+        "Outstanding work! King of Comedy is a must-watch."
+      ]
+    },
+    {
+      "title": "The Broken Hearts Club: A Romantic Comedy",
+      "rating": 6.9,
+      "reviews": [
+        "The Broken Hearts Club: A Romantic Comedy is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. The Broken Hearts Club: A Romantic Comedy kept me engaged throughout.",
+        "Enjoyed The Broken Hearts Club: A Romantic Comedy. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "The Comedy of Terrors",
+      "rating": 6.5,
+      "reviews": [
+        "The Comedy of Terrors is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. The Comedy of Terrors kept me engaged throughout.",
+        "Enjoyed The Comedy of Terrors. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Louis C.K.: Live at the Comedy Store",
+      "rating": 7.8,
+      "reviews": [
+        "Absolutely loved Louis C.K.: Live at the Comedy Store! Couldn't look away.",
+        "Louis C.K.: Live at the Comedy Store is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Louis C.K.: Live at the Comedy Store exceeded all expectations.",
+        "Outstanding work! Louis C.K.: Live at the Comedy Store is a must-watch."
+      ]
+    },
+    {
+      "title": "The Original Kings of Comedy",
+      "rating": 6.8,
+      "reviews": [
+        "The Original Kings of Comedy is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. The Original Kings of Comedy kept me engaged throughout.",
+        "Enjoyed The Original Kings of Comedy. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Comedy Central Roast of Charlie Sheen",
+      "rating": 7.7,
+      "reviews": [
+        "Absolutely loved Comedy Central Roast of Charlie Sheen! Couldn't look away.",
+        "Comedy Central Roast of Charlie Sheen is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Comedy Central Roast of Charlie Sheen exceeded all expectations.",
+        "Outstanding work! Comedy Central Roast of Charlie Sheen is a must-watch."
+      ]
+    },
+    {
+      "title": "The Comedy",
+      "rating": 6.3,
+      "reviews": [
+        "The Comedy is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. The Comedy kept me engaged throughout.",
+        "Enjoyed The Comedy. Not perfect but definitely entertaining."
+      ]
+    }
+  ],
+  "drama": [
+    {
+      "title": "Confessions of a Teenage Drama Queen",
+      "rating": 4.7,
+      "reviews": [
+        "Mixed feelings about Confessions of a Teenage Drama Queen. Some scenes were good, others not so much.",
+        "Expected more from Confessions of a Teenage Drama Queen. It was okay but didn't meet my expectations.",
+        "Confessions of a Teenage Drama Queen has potential but falls short in execution."
+      ]
+    },
+    {
+      "title": "A Woman of Paris: A Drama of Fate",
+      "rating": 6.9,
+      "reviews": [
+        "A Woman of Paris: A Drama of Fate is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. A Woman of Paris: A Drama of Fate kept me engaged throughout.",
+        "Enjoyed A Woman of Paris: A Drama of Fate. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Kim Possible: So the Drama",
+      "rating": 7.1,
+      "reviews": [
+        "Absolutely loved Kim Possible: So the Drama! Couldn't look away.",
+        "Kim Possible: So the Drama is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Kim Possible: So the Drama exceeded all expectations.",
+        "Outstanding work! Kim Possible: So the Drama is a must-watch."
+      ]
+    },
+    {
+      "title": "Eating Out: Drama Camp",
+      "rating": 5.3,
+      "reviews": [
+        "Eating Out: Drama Camp is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Eating Out: Drama Camp kept me engaged throughout.",
+        "Enjoyed Eating Out: Drama Camp. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Love Action Drama",
+      "rating": 5.2,
+      "reviews": [
+        "Love Action Drama is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Love Action Drama kept me engaged throughout.",
+        "Enjoyed Love Action Drama. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Drama/Mex",
+      "rating": 5.9,
+      "reviews": [
+        "Drama/Mex is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Drama/Mex kept me engaged throughout.",
+        "Enjoyed Drama/Mex. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "A Little Daytime Drama",
+      "rating": 6.4,
+      "reviews": [
+        "A Little Daytime Drama is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. A Little Daytime Drama kept me engaged throughout.",
+        "Enjoyed A Little Daytime Drama. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Family Drama",
+      "rating": 5.9,
+      "reviews": [
+        "Family Drama is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Family Drama kept me engaged throughout.",
+        "Enjoyed Family Drama. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Chang: A Drama of the Wilderness",
+      "rating": 6.9,
+      "reviews": [
+        "Chang: A Drama of the Wilderness is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Chang: A Drama of the Wilderness kept me engaged throughout.",
+        "Enjoyed Chang: A Drama of the Wilderness. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Drama",
+      "rating": 4.9,
+      "reviews": [
+        "Mixed feelings about Drama. Some scenes were good, others not so much.",
+        "Expected more from Drama. It was okay but didn't meet my expectations.",
+        "Drama has potential but falls short in execution."
+      ]
+    }
+  ],
+  "sci-fi": [
+    {
+      "title": "The Sci-Fi Boys",
+      "rating": 6.9,
+      "reviews": [
+        "The Sci-Fi Boys is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. The Sci-Fi Boys kept me engaged throughout.",
+        "Enjoyed The Sci-Fi Boys. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "From Stargate to Atlantis: Sci Fi Lowdown",
+      "rating": 7.3,
+      "reviews": [
+        "Absolutely loved From Stargate to Atlantis: Sci Fi Lowdown! Couldn't look away.",
+        "From Stargate to Atlantis: Sci Fi Lowdown is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. From Stargate to Atlantis: Sci Fi Lowdown exceeded all expectations.",
+        "Outstanding work! From Stargate to Atlantis: Sci Fi Lowdown is a must-watch."
+      ]
+    },
+    {
+      "title": "Sci Fi Inside: 'the Triangle'",
+      "rating": 7.1,
+      "reviews": [
+        "Absolutely loved Sci Fi Inside: 'the Triangle'! Couldn't look away.",
+        "Sci Fi Inside: 'the Triangle' is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Sci Fi Inside: 'the Triangle' exceeded all expectations.",
+        "Outstanding work! Sci Fi Inside: 'the Triangle' is a must-watch."
+      ]
+    },
+    {
+      "title": "Sci Fi Inside: Stargate SG-1 200th Episode",
+      "rating": 8.3,
+      "reviews": [
+        "Absolutely loved Sci Fi Inside: Stargate SG-1 200th Episode! Couldn't look away.",
+        "Sci Fi Inside: Stargate SG-1 200th Episode is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Sci Fi Inside: Stargate SG-1 200th Episode exceeded all expectations.",
+        "Outstanding work! Sci Fi Inside: Stargate SG-1 200th Episode is a must-watch."
+      ]
+    },
+    {
+      "title": "Not Another Sci-Fi Movie",
+      "rating": 2.5,
+      "reviews": [
+        "Mixed feelings about Not Another Sci-Fi Movie. Some scenes were good, others not so much.",
+        "Expected more from Not Another Sci-Fi Movie. It was okay but didn't meet my expectations.",
+        "Not Another Sci-Fi Movie has potential but falls short in execution."
+      ]
+    },
+    {
+      "title": "Sci Fi Inside: 'Serenity'",
+      "rating": 8.0,
+      "reviews": [
+        "Absolutely loved Sci Fi Inside: 'Serenity'! Couldn't look away.",
+        "Sci Fi Inside: 'Serenity' is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Sci Fi Inside: 'Serenity' exceeded all expectations.",
+        "Outstanding work! Sci Fi Inside: 'Serenity' is a must-watch."
+      ]
+    },
+    {
+      "title": "Sci Fi Lowdown: Behind the Stargate - Secrets Revealed",
+      "rating": 8.1,
+      "reviews": [
+        "Absolutely loved Sci Fi Lowdown: Behind the Stargate - Secrets Revealed! Couldn't look away.",
+        "Sci Fi Lowdown: Behind the Stargate - Secrets Revealed is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Sci Fi Lowdown: Behind the Stargate - Secrets Revealed exceeded all expectations.",
+        "Outstanding work! Sci Fi Lowdown: Behind the Stargate - Secrets Revealed is a must-watch."
+      ]
+    },
+    {
+      "title": "Sci Fi Inside: Sci Fi Friday",
+      "rating": 4.7,
+      "reviews": [
+        "Mixed feelings about Sci Fi Inside: Sci Fi Friday. Some scenes were good, others not so much.",
+        "Expected more from Sci Fi Inside: Sci Fi Friday. It was okay but didn't meet my expectations.",
+        "Sci Fi Inside: Sci Fi Friday has potential but falls short in execution."
+      ]
+    },
+    {
+      "title": "Sci-Fi High: The Movie Musical",
+      "rating": 3.9,
+      "reviews": [
+        "Mixed feelings about Sci-Fi High: The Movie Musical. Some scenes were good, others not so much.",
+        "Expected more from Sci-Fi High: The Movie Musical. It was okay but didn't meet my expectations.",
+        "Sci-Fi High: The Movie Musical has potential but falls short in execution."
+      ]
+    },
+    {
+      "title": "Time Warp: The Greatest Cult Films of All-Time- Vol. 2 Horror and Sci-Fi",
+      "rating": 7.0,
+      "reviews": [
+        "Absolutely loved Time Warp: The Greatest Cult Films of All-Time- Vol. 2 Horror and Sci-Fi! Couldn't look away.",
+        "Time Warp: The Greatest Cult Films of All-Time- Vol. 2 Horror and Sci-Fi is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Time Warp: The Greatest Cult Films of All-Time- Vol. 2 Horror and Sci-Fi exceeded all expectations.",
+        "Outstanding work! Time Warp: The Greatest Cult Films of All-Time- Vol. 2 Horror and Sci-Fi is a must-watch."
+      ]
+    }
+  ],
+  "thriller": [
+    {
+      "title": "Michael Jackson: Thriller",
+      "rating": 8.7,
+      "reviews": [
+        "Absolutely loved Michael Jackson: Thriller! Couldn't look away.",
+        "Michael Jackson: Thriller is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Michael Jackson: Thriller exceeded all expectations.",
+        "Outstanding work! Michael Jackson: Thriller is a must-watch."
+      ]
+    },
+    {
+      "title": "Thriller: A Cruel Picture",
+      "rating": 6.4,
+      "reviews": [
+        "Thriller: A Cruel Picture is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Thriller: A Cruel Picture kept me engaged throughout.",
+        "Enjoyed Thriller: A Cruel Picture. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Sing: Thriller",
+      "rating": 6.6,
+      "reviews": [
+        "Sing: Thriller is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Sing: Thriller kept me engaged throughout.",
+        "Enjoyed Sing: Thriller. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Clue: A Love Thriller",
+      "rating": 5.0,
+      "reviews": [
+        "Clue: A Love Thriller is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Clue: A Love Thriller kept me engaged throughout.",
+        "Enjoyed Clue: A Love Thriller. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Thriller 40",
+      "rating": 7.9,
+      "reviews": [
+        "Absolutely loved Thriller 40! Couldn't look away.",
+        "Thriller 40 is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Thriller 40 exceeded all expectations.",
+        "Outstanding work! Thriller 40 is a must-watch."
+      ]
+    },
+    {
+      "title": "Thriller",
+      "rating": 3.6,
+      "reviews": [
+        "Mixed feelings about Thriller. Some scenes were good, others not so much.",
+        "Expected more from Thriller. It was okay but didn't meet my expectations.",
+        "Thriller has potential but falls short in execution."
+      ]
+    },
+    {
+      "title": "Shrek: Thriller Night",
+      "rating": 6.2,
+      "reviews": [
+        "Shrek: Thriller Night is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Shrek: Thriller Night kept me engaged throughout.",
+        "Enjoyed Shrek: Thriller Night. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "The Making of 'Thriller'",
+      "rating": 8.3,
+      "reviews": [
+        "Absolutely loved The Making of 'Thriller'! Couldn't look away.",
+        "The Making of 'Thriller' is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. The Making of 'Thriller' exceeded all expectations.",
+        "Outstanding work! The Making of 'Thriller' is a must-watch."
+      ]
+    },
+    {
+      "title": "Clarkson: Thriller",
+      "rating": 7.7,
+      "reviews": [
+        "Absolutely loved Clarkson: Thriller! Couldn't look away.",
+        "Clarkson: Thriller is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Clarkson: Thriller exceeded all expectations.",
+        "Outstanding work! Clarkson: Thriller is a must-watch."
+      ]
+    },
+    {
+      "title": "Pornography: A Thriller",
+      "rating": 4.8,
+      "reviews": [
+        "Mixed feelings about Pornography: A Thriller. Some scenes were good, others not so much.",
+        "Expected more from Pornography: A Thriller. It was okay but didn't meet my expectations.",
+        "Pornography: A Thriller has potential but falls short in execution."
+      ]
+    }
+  ],
+  "romance": [
+    {
+      "title": "True Romance",
+      "rating": 7.9,
+      "reviews": [
+        "Absolutely loved True Romance! Couldn't look away.",
+        "True Romance is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. True Romance exceeded all expectations.",
+        "Outstanding work! True Romance is a must-watch."
+      ]
+    },
+    {
+      "title": "Romance & Cigarettes",
+      "rating": 6.2,
+      "reviews": [
+        "Romance & Cigarettes is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Romance & Cigarettes kept me engaged throughout.",
+        "Enjoyed Romance & Cigarettes. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Romance",
+      "rating": 5.2,
+      "reviews": [
+        "Romance is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Romance kept me engaged throughout.",
+        "Enjoyed Romance. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Office Romance",
+      "rating": 8.2,
+      "reviews": [
+        "Absolutely loved Office Romance! Couldn't look away.",
+        "Office Romance is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Office Romance exceeded all expectations.",
+        "Outstanding work! Office Romance is a must-watch."
+      ]
+    },
+    {
+      "title": "Shuddh Desi Romance",
+      "rating": 5.8,
+      "reviews": [
+        "Shuddh Desi Romance is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Shuddh Desi Romance kept me engaged throughout.",
+        "Enjoyed Shuddh Desi Romance. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Murphy's Romance",
+      "rating": 7.0,
+      "reviews": [
+        "Absolutely loved Murphy's Romance! Couldn't look away.",
+        "Murphy's Romance is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Murphy's Romance exceeded all expectations.",
+        "Outstanding work! Murphy's Romance is a must-watch."
+      ]
+    },
+    {
+      "title": "A Little Romance",
+      "rating": 7.4,
+      "reviews": [
+        "Absolutely loved A Little Romance! Couldn't look away.",
+        "A Little Romance is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. A Little Romance exceeded all expectations.",
+        "Outstanding work! A Little Romance is a must-watch."
+      ]
+    },
+    {
+      "title": "Guilty of Romance",
+      "rating": 6.8,
+      "reviews": [
+        "Guilty of Romance is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Guilty of Romance kept me engaged throughout.",
+        "Enjoyed Guilty of Romance. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Modern Romance",
+      "rating": 7.0,
+      "reviews": [
+        "Absolutely loved Modern Romance! Couldn't look away.",
+        "Modern Romance is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Modern Romance exceeded all expectations.",
+        "Outstanding work! Modern Romance is a must-watch."
+      ]
+    },
+    {
+      "title": "A Cruel Romance",
+      "rating": 7.9,
+      "reviews": [
+        "Absolutely loved A Cruel Romance! Couldn't look away.",
+        "A Cruel Romance is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. A Cruel Romance exceeded all expectations.",
+        "Outstanding work! A Cruel Romance is a must-watch."
+      ]
+    }
+  ],
+  "horror": [
+    {
+      "title": "The Rocky Horror Picture Show",
+      "rating": 7.4,
+      "reviews": [
+        "Absolutely loved The Rocky Horror Picture Show! Couldn't look away.",
+        "The Rocky Horror Picture Show is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. The Rocky Horror Picture Show exceeded all expectations.",
+        "Outstanding work! The Rocky Horror Picture Show is a must-watch."
+      ]
+    },
+    {
+      "title": "The Amityville Horror",
+      "rating": 5.9,
+      "reviews": [
+        "The Amityville Horror is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. The Amityville Horror kept me engaged throughout.",
+        "Enjoyed The Amityville Horror. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Nosferatu: A Symphony of Horror",
+      "rating": 7.8,
+      "reviews": [
+        "Absolutely loved Nosferatu: A Symphony of Horror! Couldn't look away.",
+        "Nosferatu: A Symphony of Horror is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Nosferatu: A Symphony of Horror exceeded all expectations.",
+        "Outstanding work! Nosferatu: A Symphony of Horror is a must-watch."
+      ]
+    },
+    {
+      "title": "The Amityville Horror",
+      "rating": 6.2,
+      "reviews": [
+        "The Amityville Horror is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. The Amityville Horror kept me engaged throughout.",
+        "Enjoyed The Amityville Horror. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Horror of Dracula",
+      "rating": 7.2,
+      "reviews": [
+        "Absolutely loved Horror of Dracula! Couldn't look away.",
+        "Horror of Dracula is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Horror of Dracula exceeded all expectations.",
+        "Outstanding work! Horror of Dracula is a must-watch."
+      ]
+    },
+    {
+      "title": "A Classic Horror Story",
+      "rating": 5.7,
+      "reviews": [
+        "A Classic Horror Story is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. A Classic Horror Story kept me engaged throughout.",
+        "Enjoyed A Classic Horror Story. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Horror Express",
+      "rating": 6.5,
+      "reviews": [
+        "Horror Express is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Horror Express kept me engaged throughout.",
+        "Enjoyed Horror Express. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "A Christmas Horror Story",
+      "rating": 5.8,
+      "reviews": [
+        "A Christmas Horror Story is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. A Christmas Horror Story kept me engaged throughout.",
+        "Enjoyed A Christmas Horror Story. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "The Rocky Horror Picture Show: Let's Do the Time Warp Again",
+      "rating": 4.2,
+      "reviews": [
+        "Mixed feelings about The Rocky Horror Picture Show: Let's Do the Time Warp Again. Some scenes were good, others not so much.",
+        "Expected more from The Rocky Horror Picture Show: Let's Do the Time Warp Again. It was okay but didn't meet my expectations.",
+        "The Rocky Horror Picture Show: Let's Do the Time Warp Again has potential but falls short in execution."
+      ]
+    },
+    {
+      "title": "Little Horror Movie",
+      "rating": 4.1,
+      "reviews": [
+        "Mixed feelings about Little Horror Movie. Some scenes were good, others not so much.",
+        "Expected more from Little Horror Movie. It was okay but didn't meet my expectations.",
+        "Little Horror Movie has potential but falls short in execution."
+      ]
+    }
+  ],
+  "adventure": [
+    {
+      "title": "Bill & Ted's Excellent Adventure",
+      "rating": 6.9,
+      "reviews": [
+        "Bill & Ted's Excellent Adventure is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Bill & Ted's Excellent Adventure kept me engaged throughout.",
+        "Enjoyed Bill & Ted's Excellent Adventure. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Zathura: A Space Adventure",
+      "rating": 6.3,
+      "reviews": [
+        "Zathura: A Space Adventure is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Zathura: A Space Adventure kept me engaged throughout.",
+        "Enjoyed Zathura: A Space Adventure. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Pee-wee's Big Adventure",
+      "rating": 7.1,
+      "reviews": [
+        "Absolutely loved Pee-wee's Big Adventure! Couldn't look away.",
+        "Pee-wee's Big Adventure is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Pee-wee's Big Adventure exceeded all expectations.",
+        "Outstanding work! Pee-wee's Big Adventure is a must-watch."
+      ]
+    },
+    {
+      "title": "The Poseidon Adventure",
+      "rating": 7.1,
+      "reviews": [
+        "Absolutely loved The Poseidon Adventure! Couldn't look away.",
+        "The Poseidon Adventure is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. The Poseidon Adventure exceeded all expectations.",
+        "Outstanding work! The Poseidon Adventure is a must-watch."
+      ]
+    },
+    {
+      "title": "Free Willy 2: The Adventure Home",
+      "rating": 5.1,
+      "reviews": [
+        "Free Willy 2: The Adventure Home is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Free Willy 2: The Adventure Home kept me engaged throughout.",
+        "Enjoyed Free Willy 2: The Adventure Home. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "The Oogieloves in the Big Balloon Adventure",
+      "rating": 1.7,
+      "reviews": [
+        "Mixed feelings about The Oogieloves in the Big Balloon Adventure. Some scenes were good, others not so much.",
+        "Expected more from The Oogieloves in the Big Balloon Adventure. It was okay but didn't meet my expectations.",
+        "The Oogieloves in the Big Balloon Adventure has potential but falls short in execution."
+      ]
+    },
+    {
+      "title": "Olaf's Frozen Adventure",
+      "rating": 5.7,
+      "reviews": [
+        "Olaf's Frozen Adventure is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Olaf's Frozen Adventure kept me engaged throughout.",
+        "Enjoyed Olaf's Frozen Adventure. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Remo Williams: The Adventure Begins",
+      "rating": 6.4,
+      "reviews": [
+        "Remo Williams: The Adventure Begins is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Remo Williams: The Adventure Begins kept me engaged throughout.",
+        "Enjoyed Remo Williams: The Adventure Begins. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "The Ewok Adventure",
+      "rating": 5.3,
+      "reviews": [
+        "The Ewok Adventure is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. The Ewok Adventure kept me engaged throughout.",
+        "Enjoyed The Ewok Adventure. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Lady and the Tramp 2: Scamp's Adventure",
+      "rating": 5.9,
+      "reviews": [
+        "Lady and the Tramp 2: Scamp's Adventure is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Lady and the Tramp 2: Scamp's Adventure kept me engaged throughout.",
+        "Enjoyed Lady and the Tramp 2: Scamp's Adventure. Not perfect but definitely entertaining."
+      ]
+    }
+  ],
+  "animation": [
+    {
+      "title": "Wallace & Gromit: The Best of Aardman Animation",
+      "rating": 8.6,
+      "reviews": [
+        "Absolutely loved Wallace & Gromit: The Best of Aardman Animation! Couldn't look away.",
+        "Wallace & Gromit: The Best of Aardman Animation is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Wallace & Gromit: The Best of Aardman Animation exceeded all expectations.",
+        "Outstanding work! Wallace & Gromit: The Best of Aardman Animation is a must-watch."
+      ]
+    },
+    {
+      "title": "Night of the Living Dead 3D: Re-Animation",
+      "rating": 3.0,
+      "reviews": [
+        "Mixed feelings about Night of the Living Dead 3D: Re-Animation. Some scenes were good, others not so much.",
+        "Expected more from Night of the Living Dead 3D: Re-Animation. It was okay but didn't meet my expectations.",
+        "Night of the Living Dead 3D: Re-Animation has potential but falls short in execution."
+      ]
+    },
+    {
+      "title": "Scott Pilgrim vs. the Animation",
+      "rating": 7.5,
+      "reviews": [
+        "Absolutely loved Scott Pilgrim vs. the Animation! Couldn't look away.",
+        "Scott Pilgrim vs. the Animation is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Scott Pilgrim vs. the Animation exceeded all expectations.",
+        "Outstanding work! Scott Pilgrim vs. the Animation is a must-watch."
+      ]
+    },
+    {
+      "title": "A Chinese Ghost Story: The Tsui Hark Animation",
+      "rating": 6.5,
+      "reviews": [
+        "A Chinese Ghost Story: The Tsui Hark Animation is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. A Chinese Ghost Story: The Tsui Hark Animation kept me engaged throughout.",
+        "Enjoyed A Chinese Ghost Story: The Tsui Hark Animation. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Walt Disney Animation Studios Short Films Collection",
+      "rating": 7.7,
+      "reviews": [
+        "Absolutely loved Walt Disney Animation Studios Short Films Collection! Couldn't look away.",
+        "Walt Disney Animation Studios Short Films Collection is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Walt Disney Animation Studios Short Films Collection exceeded all expectations.",
+        "Outstanding work! Walt Disney Animation Studios Short Films Collection is a must-watch."
+      ]
+    },
+    {
+      "title": "Adam by Eve: A Live in Animation",
+      "rating": 6.2,
+      "reviews": [
+        "Adam by Eve: A Live in Animation is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Adam by Eve: A Live in Animation kept me engaged throughout.",
+        "Enjoyed Adam by Eve: A Live in Animation. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "The Animation Show",
+      "rating": 7.5,
+      "reviews": [
+        "Absolutely loved The Animation Show! Couldn't look away.",
+        "The Animation Show is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. The Animation Show exceeded all expectations.",
+        "Outstanding work! The Animation Show is a must-watch."
+      ]
+    },
+    {
+      "title": "Suspended Animation",
+      "rating": 5.3,
+      "reviews": [
+        "Suspended Animation is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Suspended Animation kept me engaged throughout.",
+        "Enjoyed Suspended Animation. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Daicon IV Opening Animation",
+      "rating": 8.0,
+      "reviews": [
+        "Absolutely loved Daicon IV Opening Animation! Couldn't look away.",
+        "Daicon IV Opening Animation is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Daicon IV Opening Animation exceeded all expectations.",
+        "Outstanding work! Daicon IV Opening Animation is a must-watch."
+      ]
+    },
+    {
+      "title": "Daicon III Opening Animation",
+      "rating": 6.9,
+      "reviews": [
+        "Daicon III Opening Animation is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Daicon III Opening Animation kept me engaged throughout.",
+        "Enjoyed Daicon III Opening Animation. Not perfect but definitely entertaining."
+      ]
+    }
+  ],
+  "crime": [
+    {
+      "title": "True Crime",
+      "rating": 6.6,
+      "reviews": [
+        "True Crime is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. True Crime kept me engaged throughout.",
+        "Enjoyed True Crime. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "An American Crime",
+      "rating": 7.2,
+      "reviews": [
+        "Absolutely loved An American Crime! Couldn't look away.",
+        "An American Crime is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. An American Crime exceeded all expectations.",
+        "Outstanding work! An American Crime is a must-watch."
+      ]
+    },
+    {
+      "title": "Henry's Crime",
+      "rating": 5.9,
+      "reviews": [
+        "Henry's Crime is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Henry's Crime kept me engaged throughout.",
+        "Enjoyed Henry's Crime. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Life of Crime",
+      "rating": 5.8,
+      "reviews": [
+        "Life of Crime is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Life of Crime kept me engaged throughout.",
+        "Enjoyed Life of Crime. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "The Crime of Padre Amaro",
+      "rating": 6.7,
+      "reviews": [
+        "The Crime of Padre Amaro is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. The Crime of Padre Amaro kept me engaged throughout.",
+        "Enjoyed The Crime of Padre Amaro. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "Crime Busters",
+      "rating": 7.1,
+      "reviews": [
+        "Absolutely loved Crime Busters! Couldn't look away.",
+        "Crime Busters is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Crime Busters exceeded all expectations.",
+        "Outstanding work! Crime Busters is a must-watch."
+      ]
+    },
+    {
+      "title": "Ferpect Crime",
+      "rating": 7.0,
+      "reviews": [
+        "Absolutely loved Ferpect Crime! Couldn't look away.",
+        "Ferpect Crime is a masterpiece. Highly recommend to everyone.",
+        "One of the best movies I've seen. Ferpect Crime exceeded all expectations.",
+        "Outstanding work! Ferpect Crime is a must-watch."
+      ]
+    },
+    {
+      "title": "Small Town Crime",
+      "rating": 6.6,
+      "reviews": [
+        "Small Town Crime is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. Small Town Crime kept me engaged throughout.",
+        "Enjoyed Small Town Crime. Not perfect but definitely entertaining."
+      ]
+    },
+    {
+      "title": "The Last Days of American Crime",
+      "rating": 3.8,
+      "reviews": [
+        "Mixed feelings about The Last Days of American Crime. Some scenes were good, others not so much.",
+        "Expected more from The Last Days of American Crime. It was okay but didn't meet my expectations.",
+        "The Last Days of American Crime has potential but falls short in execution."
+      ]
+    },
+    {
+      "title": "The Element of Crime",
+      "rating": 6.7,
+      "reviews": [
+        "The Element of Crime is a solid watch. Worth your time if you enjoy the genre.",
+        "Good movie overall. The Element of Crime kept me engaged throughout.",
+        "Enjoyed The Element of Crime. Not perfect but definitely entertaining."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+boto3
+langchain
+langchain-aws
+langgraph
+langsmith
+gradio
+PyPDF2
+python-dotenv
+requests

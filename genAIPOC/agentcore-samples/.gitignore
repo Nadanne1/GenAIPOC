@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+deploy_env/
+
+# AWS Credentials and Sensitive Config
+*_config.json
+agent_mcp_environment.json
+agentcore_config.json
+agentcore_gateway_lambda_mcp_config.json
+.bedrock_agentcore.yaml
+*.pem
+*.key
+credentials
+
+# Test Results and Logs
+*_test_results.json
+*.log
+test_results/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Storage (vector index - can be regenerated)
+storage/
+
+# Empty placeholder files
+SPEAKER_NOTES_RAG_MCP.md

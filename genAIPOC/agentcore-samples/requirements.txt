@@ -1,0 +1,8 @@
+boto3
+pydantic
+llama-index>=0.11.0
+llama-index-llms-bedrock>=0.2.0
+llama-index-embeddings-bedrock>=0.2.0
+llama-index-tools-mcp>=0.1.0
+mcp>=0.1.0
+nest-asyncio
