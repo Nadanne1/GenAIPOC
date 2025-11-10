@@ -1,9 +1,15 @@
 boto3
 langchain
 langchain-aws
+langchain_community
 langgraph
 langsmith
 gradio
 PyPDF2
 python-dotenv
 requests
+jupyter
+ipykernel
+openevals
+nest_asyncio
+pyppeteer
